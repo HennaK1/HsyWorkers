@@ -225,3 +225,7 @@
 .editButton {
   border: none !important;
 }
+.deleteButton:hover,
+.editButton:hover {
+  background-color: #979797;
+}
