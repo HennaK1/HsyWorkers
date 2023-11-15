@@ -1,0 +1,12 @@
+/* CSS for not found page view */
+.container {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn {
+  background-color: rgb(238, 156, 3);
+  border: none;
+}

@@ -1,0 +1,227 @@
+.box {
+  height: auto;
+  /* position: relative; */
+  width: 100vw;
+}
+
+.box .header {
+  background-color: transparent;
+  height: 199px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.box .group {
+  background-color: #ff8312;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 44px;
+  /* left: 88px; */
+  position: absolute;
+  top: 106px;
+  width: 1440px;
+  width: 100%;
+}
+
+.box .frame {
+  align-items: center;
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+  /* left: 405px; */
+  position: relative;
+  top: 16px;
+
+  align-content: center;
+  margin: auto;
+}
+
+.box .textWrapper {
+  color: #ffffff;
+  font-family: 'Arimo-Bold', Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.box .overlapGroup {
+  height: 100px;
+  /* left: 88px; */
+  position: absolute;
+  top: 5px;
+  width: 1440px;
+}
+
+.box .line {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 99px;
+  width: 1440px;
+}
+
+.box .hsyLogo {
+  height: 100px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 163px;
+}
+.box2 {
+  height: 50vh;
+  width: 100vw;
+  margin: auto;
+}
+
+.box2 .rectangle {
+  background-color: #ececec;
+  border-radius: 8px;
+  height: 90%;
+  left: 0;
+  top: 0;
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.label {
+  position: relative;
+  margin: auto;
+  margin-top: 14rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.label > h1 {
+  font-size: 25px;
+}
+
+.label .textWrapper2 {
+  color: #000000;
+  font-family: 'Arimo-Bold', Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+  position: absolute;
+}
+.box3 {
+  height: 52px;
+  /* position: relative; */
+
+  display: flex;
+  align-content: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box3 .group3 {
+  height: 45px;
+  left: 0;
+  /* position: fixed; */
+  top: 0;
+  /* width: 322px; */
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.box3 .editButton {
+  align-items: center;
+  background-color: #ff8312;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+
+  left: 0;
+  overflow: hidden;
+  padding: 16px 88px;
+  margin-right: 10px;
+  top: 0;
+  width: 148px;
+}
+
+.box3 .vector {
+  height: 20px;
+  margin-left: -63.5px;
+  position: relative;
+  width: 20px;
+}
+
+.box3 .textWrapper {
+  color: #ffffff;
+  font-family: 'Arimo-Bold', Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: -33.5px;
+  margin-right: -63.5px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.box3 .deleteButton {
+  align-items: center;
+  background-color: #ff6b5a;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+
+  left: 183px;
+  overflow: hidden;
+  padding: 16px 88px;
+
+  top: 0;
+  width: 148px;
+}
+
+.box3 .img {
+  height: 20px;
+  margin-left: -51.28px;
+  position: relative;
+  width: 15.56px;
+}
+
+.box3 .textWrapper2 {
+  color: #ffffff;
+  font-family: 'Arimo-Bold', Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: -25.72px;
+  margin-right: -51.28px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+.textContent {
+  margin: 2rem;
+}
+.rectangle .box3 {
+  display: flex;
+  justify-content: center;
+}
+.deleteButton,
+.editButton {
+  border: none !important;
+}
