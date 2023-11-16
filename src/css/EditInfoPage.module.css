@@ -1,3 +1,5 @@
+/* CSS Rules for edit information page */
+
 .contentContainer {
   position: relative;
 }
@@ -14,4 +16,5 @@
 .textEditorContainer > h1 {
   font-size: 24px;
   margin-bottom: 1rem;
+  color: #009688;
 }

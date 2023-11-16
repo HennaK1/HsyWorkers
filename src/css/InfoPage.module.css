@@ -1,5 +1,14 @@
-/* CSS rules for information page */
+/* CSS rules for information page  and header*/
 
+.headerTitle {
+  position: absolute;
+  /* display: flex; */
+  left: 11rem;
+  top: 62px;
+  font-size: 20px;
+  color: rgb(255, 136, 0);
+  font-weight: 300;
+}
 .box {
   height: auto;
   /* position: relative; */
@@ -58,7 +67,6 @@
   /* left: 88px; */
   position: absolute;
   top: 5px;
-  width: 1440px;
 }
 
 .box .line {
@@ -102,6 +110,7 @@
   margin: auto;
   margin-bottom: 2rem;
   text-align: center;
+  color: #009688;
 }
 .label > h1 {
   font-size: 25px;

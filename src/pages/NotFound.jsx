@@ -2,6 +2,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import '../css/NotFound.css';
 
+//Not found page
 const NotFoundPage = () => {
   const navigate = useNavigate();
 

@@ -7,6 +7,6 @@
   text-align: center;
 }
 .btn {
-  background-color: rgb(238, 156, 3);
-  border: none;
+  background-color: rgb(238, 156, 3) !important;
+  border: none !important;
 }
