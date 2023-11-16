@@ -1,0 +1,26 @@
+.tox-notification.tox-notification--in.tox-notification--warning {
+  display: none;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.buttonCancel {
+  margin-right: 20px;
+  background-color: #989898 !important;
+  border: none !important;
+}
+.buttonPreview {
+  background-color: #ff8312 !important;
+  border: none !important;
+}
+.buttonCancel:hover {
+  background-color: #bcbcbc !important;
+}
+.buttonPreview:hover {
+  background-color: #f89d47 !important;
+}
