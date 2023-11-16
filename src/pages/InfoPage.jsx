@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 import { TrashFill, PencilFill } from 'react-bootstrap-icons';
 import { useNavigate } from 'react-router-dom';
 
+//Current information page
 const CurrentInfo = () => {
   const navigate = useNavigate();
 

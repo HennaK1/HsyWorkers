@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import '../css/TextEditor.css';
 
+//Texteditor component
 const TextEditor = () => {
   const editorRef = useRef(null);
   const navigate = useNavigate();
