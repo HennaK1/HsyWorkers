@@ -18,7 +18,9 @@ const NotFoundPage = () => {
           <h2>Page Not Found</h2>
           <p>The page you&apos;re looking for doesn&apos;t exist.</p>
         </Col>
-        <Button onClick={frontPage}>Home</Button>
+        <Button classname="homeButton" onClick={frontPage}>
+          Home
+        </Button>
       </Row>
     </Container>
   );
