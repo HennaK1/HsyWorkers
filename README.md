@@ -1,2 +1,3 @@
 # Hsy Worker's system demo
-# Innovation project at Metropolia
+
+Innovation project at Metropolia
