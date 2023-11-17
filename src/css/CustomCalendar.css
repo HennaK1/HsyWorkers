@@ -7,6 +7,9 @@
   height: 10%;
   margin-top: 7rem;
 }
+.infoPageButton:hover {
+  background-color: #fb9638 !important;
+}
 .react-calendar__tile {
   /* display: none; */
   /* background-color: aqua; */
