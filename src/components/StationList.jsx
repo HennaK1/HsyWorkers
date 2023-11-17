@@ -3,13 +3,12 @@ import { Dropdown } from 'react-bootstrap';
 import styles from '../css/RentManagementPage.module.css';
 import { ChevronCompactDown } from 'react-bootstrap-icons';
 
+//Station list component
 const StationList = () => {
   const [selectedStation, setSelectedStation] = useState(null);
   const stations = ['Konala', 'Jorvas', 'Ämmässuo'];
 
-  const handleDropdownToggle = () => {
-    // Implement any toggle logic if needed
-  };
+  const handleDropdownToggle = () => {};
 
   const handleStationSelect = (station) => {
     setSelectedStation(station);
