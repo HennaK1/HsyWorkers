@@ -4,12 +4,19 @@ import styles from '../css/RentManagementPage.module.css';
 import DropDownBox from '../components/DropDownBox';
 import RentalCalendar from '../components/Calendar';
 import StationList from '../components/StationList';
-import { Search } from 'react-bootstrap-icons';
+import {
+  Search,
+  Calendar2EventFill,
+  ClockFill,
+  TruckFrontFill,
+  GeoFill,
+} from 'react-bootstrap-icons';
 
 // Rent management page
 const RentManagement = () => {
   // eslint-disable-next-line no-unused-vars
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [selectedPerson, setSelectedPerson] = useState(null);
   const boxes = [
     {
       text: '10-13',
@@ -96,24 +103,60 @@ const RentManagement = () => {
       <Header title="Varaushallinta" />
       <div className={styles.upContainer}>
         <StationList />
-        <div className={styles.searchContainer}>
-          <p>Etsi asiakkaan varaus</p>
-          <div className={styles.searchBox}>
-            <Search />
-            <p>Varausnumero, asiakkaan nimi...</p>
+        {selectedPerson ? (
+          <div className={styles.additionalInfoContainer}>
+            <div className={styles.customerInfo}>
+              <p className={styles.customerName}>{selectedPerson}</p>
+              <p className={styles.rentInfoTxt}>Varauksen tiedot:</p>
+              <p>
+                {' '}
+                <Calendar2EventFill /> 17.12.2023
+              </p>
+              <p>
+                <ClockFill />
+                13:00-15:00
+              </p>
+              <p>
+                <TruckFrontFill /> Peräkärry
+              </p>
+              <p>
+                <GeoFill /> Kivikon sortti asema
+              </p>
+            </div>
+            <div className={styles.buttonsContainer}>
+              <button className={styles.customerInfoButton}>
+                Poista varaus
+              </button>
+              <button className={styles.customerInfoButton2}>
+                Muokkaa varausta
+              </button>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className={styles.searchContainer}>
+            <p>Etsi asiakkaan varaus</p>
+            <div className={styles.searchBox}>
+              <Search />
+              <p>Varausnumero, asiakkaan nimi...</p>
+            </div>
+          </div>
+        )}
       </div>
       <div className={styles.contentsContainer}>
         <div className={styles.boxContainer}>
           {boxes.map((box, index) => (
-            <DropDownBox key={index} {...box} />
+            <DropDownBox
+              key={index}
+              onSelect={(person) => setSelectedPerson(person)}
+              {...box}
+            />
           ))}
         </div>
         <div className={styles.calendar}>
           <RentalCalendar setSelectedDate={setSelectedDate} />
         </div>
       </div>
+      <div className={styles.footer}></div>
     </>
   );
 };

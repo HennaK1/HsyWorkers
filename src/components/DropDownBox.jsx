@@ -5,6 +5,7 @@ import { Dropdown } from 'react-bootstrap';
 import { ChevronCompactDown } from 'react-bootstrap-icons';
 import styles from '../css/RentManagementPage.module.css';
 
+//Dropdown component
 function CustomToggle({ children, onClick }) {
   return (
     <div className={styles.dropDownButton} onClick={(e) => onClick(e)}>
@@ -20,11 +21,20 @@ const DropDownBox = ({
   textContainerStyle,
   iconContainerStyle,
   menuItems,
+  onSelect,
 }) => {
+  // eslint-disable-next-line no-unused-vars
+  const [selectedPerson, setSelectedPerson] = useState(null);
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleDropdownToggle = () => {
     setShowDropdown(!showDropdown);
+  };
+
+  const handlePersonSelect = (person) => {
+    onSelect(person);
+    setSelectedPerson(person);
+    setShowDropdown(false);
   };
 
   return (
@@ -42,7 +52,10 @@ const DropDownBox = ({
 
           <Dropdown.Menu className={styles.customDropdownMenu}>
             {menuItems.map((item, index) => (
-              <Dropdown.Item key={index} href={`#/${text}-action-${index + 1}`}>
+              <Dropdown.Item
+                key={index}
+                onClick={() => handlePersonSelect(item)}
+              >
                 {item}
               </Dropdown.Item>
             ))}
