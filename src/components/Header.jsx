@@ -20,7 +20,14 @@ const Header = ({ title }) => (
               Info
             </Link>
           </div>
-          <div className={styles.textWrapper}>Yhteystiedot</div>
+          <div className={styles.textWrapper}>
+            <Link
+              className={styles.link}
+              to="https://www.hsy.fi/hsy/asiakaspalvelu/"
+            >
+              Yhteystiedot
+            </Link>
+          </div>
         </div>
       </div>
       <div className={styles.overlapGroup}>
